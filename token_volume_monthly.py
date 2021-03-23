@@ -21,7 +21,6 @@ pools = ["""0x1b96b92314c44b159149f7e0303511fb2fc4774f"""]
 for pool in pools:
     # pdb.set_trace()
     query = """
-
 {
 ethereum(network: bsc){
 dexTrades(options: {limit: 1000000, asc: "timeInterval.month"},
@@ -65,7 +64,6 @@ gasPrice
 gas
 }}
 }}
-
     """
     # pdb.set_trace()
     result = run_query(query)  # Execute the query
